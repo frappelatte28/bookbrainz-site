@@ -110,70 +110,7 @@ class IndexPage extends React.Component {
 											</Button>
 										</Col>
 									</Row>
-									<div className="margin-top-3">
-										<h4 className="contact-text">
-											Contact Us
-										</h4>
-										<div style={{
-											alignItems: 'center',
-											display: 'flex',
-											justifyContent: 'center'
-										}}
-										>
-											<FontAwesomeIcon
-												className="margin-sides-1 contact-text"
-												icon="circle"
-											/>
-											<a className="contact-text" href="//webchat.freenode.net/?channels=#metabrainz">
-												<FontAwesomeIcon
-													className="contact-text"
-													icon="comment-dots"
-													size="2x"
-												/>
-												IRC
-											</a>
-											<FontAwesomeIcon
-												className="margin-sides-1 contact-text"
-												icon="circle"
-											/>
-											<a className="contact-text" href="//community.metabrainz.org/c/bookbrainz">
-												<FontAwesomeIcon
-													className="contact-text"
-													icon="comments"
-													size="2x"
-												/>
-												Forums
-											</a>
-											<FontAwesomeIcon
-												className="margin-sides-1 contact-text"
-												icon="circle"
-											/>
-											<a className="contact-text" href="//twitter.com/intent/tweet?screen_name=BookBrainz">
-												<FontAwesomeIcon
-													className="contact-text"
-													icon={['fab', 'twitter']}
-													size="2x"
-												/>
-												Twitter
-											</a>
-											<FontAwesomeIcon
-												className="margin-sides-1 contact-text"
-												icon="circle"
-											/>
-											<a className="contact-text" href="mailto:bookbrainz@metabrainz.org">
-												<FontAwesomeIcon
-													className="contact-text"
-													icon="envelope"
-													size="2x"
-												/>
-												Email
-											</a>
-											<FontAwesomeIcon
-												className="margin-sides-1 contact-text"
-												icon="circle"
-											/>
-										</div>
-									</div>
+
 								</Col>
 							</Row>
 						</Grid>

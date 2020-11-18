@@ -19,6 +19,7 @@
  */
 
 import * as bootstrap from 'react-bootstrap';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -33,21 +34,75 @@ function Footer(props) {
 		<footer className="footer">
 			<Grid fluid>
 				<Row>
-					<Col xs={4}>
-						<small>{'Tested with '}
-							<a
-								href="https://www.browserstack.com/"
-								rel="noopener noreferrer"
-								target="_blank"
+					<Col>
+						<div className="margin-top-3">
+							<h4 className="contact-text">
+											Contact Us
+							</h4>
+							<div style={{
+								alignItems: 'center',
+								display: 'flex',
+								justifyContent: 'center'
+							}}
 							>
-								<img
-									alt="BrowserStack Logo"
-									height="25"
-									src="/images/BrowserStack.png"
+								<FontAwesomeIcon
+									className="margin-sides-1 contact-text"
+									icon="circle"
 								/>
-							</a>
-						</small>
+								<a className="contact-text" href="//webchat.freenode.net/?channels=#metabrainz">
+									<FontAwesomeIcon
+										className="contact-text"
+										icon="comment-dots"
+										size="2x"
+									/>
+												IRC
+								</a>
+								<FontAwesomeIcon
+									className="margin-sides-1 contact-text"
+									icon="circle"
+								/>
+								<a className="contact-text" href="//community.metabrainz.org/c/bookbrainz">
+									<FontAwesomeIcon
+										className="contact-text"
+										icon="comments"
+										size="2x"
+									/>
+												Forums
+								</a>
+								<FontAwesomeIcon
+									className="margin-sides-1 contact-text"
+									icon="circle"
+								/>
+								<a className="contact-text" href="//twitter.com/intent/tweet?screen_name=BookBrainz">
+									<FontAwesomeIcon
+										className="contact-text"
+										icon={['fab', 'twitter']}
+										size="2x"
+									/>
+												Twitter
+								</a>
+								<FontAwesomeIcon
+									className="margin-sides-1 contact-text"
+									icon="circle"
+								/>
+								<a className="contact-text" href="mailto:bookbrainz@metabrainz.org">
+									<FontAwesomeIcon
+										className="contact-text"
+										icon="envelope"
+										size="2x"
+									/>
+												Email
+								</a>
+								<FontAwesomeIcon
+									className="margin-sides-1 contact-text"
+									icon="circle"
+								/>
+							</div>
+						</div>
 					</Col>
+
+				</Row>
+				<Row>
 					<Col className="text-center" xs={4}>
 						<small>Cover image by{' '}
 							<a href="https://commons.wikimedia.org/wiki/File:Bookshelf.jpg">
